@@ -1,0 +1,123 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    background: #24C6DC;  
+background: -webkit-linear-gradient(to right, #514A9D, #24C6DC); 
+background: linear-gradient(to right, #514A9D, #24C6DC); 
+
+    
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial, sans-serif';
+    border-radius: 5px;
+    margin-bottom: 3px;
+    
+}
+
+.nav h1 {
+    margin: 0;
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+}
+
+.nav .nav-search {
+    flex: 1;
+    display: flex;
+    margin: 0 20px;
+}
+
+.nav .nav-search input {
+    flex: 1;
+    border: 1px solid blueviolet;
+    color: rgb(0, 0, 0);
+    height: 35px;
+    border-right: none;
+    padding: 0 10px;
+    border-radius: 5px 0 0 5px;
+    font-size: 16px;
+}
+
+.nav .nav-search button {
+    border: 1px solid blueviolet;
+    color: white;
+    background-color: blueviolet;
+    height: 35px;
+    border-radius: 0 5px 5px 0;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 0 15px;
+}
+
+.nav .nav-search button:hover {
+    background-color: darkviolet;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav ul li {
+    margin: 0 10px;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: rgb(55, 22, 86);
+    font-size: 18px;
+    padding: 5px 10px;
+    border-radius: 3px;
+    transition: background-color 0.3s, color 0.3s;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-bottom: 2px;
+}
+
+.nav ul li a:hover {
+    background-color: blueviolet;
+    color: white;
+    border-radius: 4px;
+    margin-bottom: 3px;
+
+}
+h1 a{
+    background: #a912cf;
+background: linear-gradient(to bottom, #ddcfe0 0%, #CF1512 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+     font-family: fantasy,cursive;
+    text-decoration: none;
+}
+.nav-search ul{
+    z-index: 10;
+    display: list-item;
+    position:absolute;
+    top:42px;
+    background-color: rgb(248, 248, 248);
+    width: 60%;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+
+}
+
+.nav-search ul li{
+    padding: 0px;
+    border: 1px solid #ddd;
+}
+
+.nav-search ul li a{
+    
+   cursor: pointer;
+   }
+.cart{
+    color: #ddd;
+    font-size: 5;
+    background-color:red;
+    border-radius: 10px;
+    padding: 2px;
+    margin-left: 2px;
+    
+
+}

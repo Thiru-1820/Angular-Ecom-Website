@@ -1,0 +1,183 @@
+{
+  "seller": [
+    {
+      "id": "a64b",
+      "name": "thiru",
+      "email": "thirumalaimuruganvel@gmail.com",
+      "password": "abc123"
+    },
+    {
+      "id": "8327",
+      "name": "Thirumalai",
+      "email": "thirumalaim@student.tce.edu",
+      "password": "12345"
+    },
+    {
+      "id": "76e7",
+      "name": "THIRUMALAI",
+      "email": "thirumalaimurugavel@gmail.com",
+      "password": "123456"
+    },
+    {
+      "id": "0dc0",
+      "name": "abc",
+      "email": "abc@gmail.com",
+      "password": "abc123"
+    }
+  ],
+  "products": [
+    {
+      "name": "realme 8",
+      "price": "13000",
+      "category": "mobile",
+      "description": "this smartphone with 64mp\nprocessor:helio G95",
+      "image": "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cGhvbmV8ZW58MHx8MHx8fDA%3D",
+      "id": "358a"
+    },
+    {
+      "name": "Asus laptop 14",
+      "price": "99999",
+      "category": "laptop",
+      "description": "\nThe ASUS VivoBook 15 is a sleek and powerful laptop designed for multitasking and productivity. It features a 15.6-inch Full HD display, an Intel Core i5 processor, and 8GB of RAM, providing smooth performance for everyday tasks. With its lightweight design and extensive connectivity options, it's perfect for both work and entertainment on the go.",
+      "image": "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bGFwdG9wfGVufDB8fDB8fHww",
+      "id": "45c8"
+    },
+    {
+      "id": "a657",
+      "name": "Nike sheo",
+      "price": "1200",
+      "category": "fashion",
+      "description": "casual sheo",
+      "image": "https://images.pexels.com/photos/1478442/pexels-photo-1478442.jpeg?cs=srgb&dl=pexels-craytive-1478442.jpg&fm=jpg"
+    },
+    {
+      "id": "125a",
+      "name": "Puma sheo",
+      "price": "5000",
+      "category": "fashion",
+      "description": "-",
+      "image": "data:image/jpeg;base64,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"
+    },
+    {
+      "id": "b1e2",
+      "name": "Boat smart watch 2",
+      "price": "1200",
+      "category": "watch",
+      "description": "smart watch",
+      "image": "data:image/jpeg;base64,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"
+    },
+    {
+      "id": "2a6f",
+      "name": "Iphone 14",
+      "price": "100000",
+      "category": "mobile",
+      "description": "waste of money",
+      "image": "https://i.postimg.cc/5098XFT0/image.png"
+    },
+    {
+      "id": "c926",
+      "name": "samsung s24 ultra",
+      "price": "120000",
+      "category": "mobile",
+      "description": "No.1 Flag ship phone",
+      "image": "https://i.postimg.cc/pr0vzqBt/image.png"
+    },
+    {
+      "id": "aa0c",
+      "name": "Samsung Galaxy Watch 5 LTE",
+      "price": "27999",
+      "category": "watch",
+      "description": "Model Name:Galaxy Watch 5 LTE\nDisplay Size:44 mm\nDisplay Type:AMOLED\nDial Shape:Circle\nSensor:\nBioelectrical Impedance Analysis Sensor, Optical Heart Rate Sensor, SPo2 Measurement, Accelerometer, Barometer, Gyro Sensor, Ambient Light Sensor, Compass",
+      "image": "https://i.postimg.cc/pXpb3QZp/image.png"
+    },
+    {
+      "name": "Asus Gaming laptop",
+      "price": "100000",
+      "category": "laptop",
+      "description": "The Asus ROG Zephyrus Duo 16 has been launched at a price of Rs 2,49,999 onwards in India, while the ROG Flow X16 has been launched at Rs 1,57,990. The Zephyrus G14 has been priced at Rs 1,46,999, and the ROG Flow X13 is priced at Rs 1,21,990.",
+      "image": "https://i.postimg.cc/7YWGyVrc/image.png",
+      "id": "aa00"
+    }
+  ],
+  "users": [
+    {
+      "id": "a2d6",
+      "name": "THIRUMALAI",
+      "email": "thirumalaimurugavel@gmail.com",
+      "password": "123456"
+    },
+    {
+      "id": "44a4",
+      "name": "THIRUMALAI",
+      "email": "thirumalaimuruganvel@gmail.com",
+      "password": "123456"
+    }
+  ],
+  "cart": [
+    {
+      "id": "fcc0",
+      "name": "realme 8",
+      "price": "13000",
+      "category": "mobile",
+      "description": "this smartphone with 64mp\nprocessor:helio G95",
+      "image": "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cGhvbmV8ZW58MHx8MHx8fDA%3D",
+      "quantity": 1,
+      "userid": "44a4",
+      "productid": "358a"
+    },
+    {
+      "id": "8c3c",
+      "name": "Asus laptop 14",
+      "price": "99999",
+      "category": "laptop",
+      "description": "\nThe ASUS VivoBook 15 is a sleek and powerful laptop designed for multitasking and productivity. It features a 15.6-inch Full HD display, an Intel Core i5 processor, and 8GB of RAM, providing smooth performance for everyday tasks. With its lightweight design and extensive connectivity options, it's perfect for both work and entertainment on the go.",
+      "image": "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bGFwdG9wfGVufDB8fDB8fHww",
+      "quantity": 1,
+      "userid": "44a4",
+      "productid": "45c8"
+    },
+    {
+      "id": "5e89",
+      "name": "Nike sheo",
+      "price": "1200",
+      "category": "fashion",
+      "description": "casual sheo",
+      "image": "https://images.pexels.com/photos/1478442/pexels-photo-1478442.jpeg?cs=srgb&dl=pexels-craytive-1478442.jpg&fm=jpg",
+      "quantity": 1,
+      "userid": "44a4",
+      "productid": "a657"
+    },
+    {
+      "id": "418d",
+      "name": "Asus laptop 14",
+      "price": "99999",
+      "category": "laptop",
+      "description": "\nThe ASUS VivoBook 15 is a sleek and powerful laptop designed for multitasking and productivity. It features a 15.6-inch Full HD display, an Intel Core i5 processor, and 8GB of RAM, providing smooth performance for everyday tasks. With its lightweight design and extensive connectivity options, it's perfect for both work and entertainment on the go.",
+      "image": "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bGFwdG9wfGVufDB8fDB8fHww",
+      "quantity": 1,
+      "userid": "44a4",
+      "productid": "45c8"
+    },
+    {
+      "id": "d361",
+      "name": "realme 8",
+      "price": "13000",
+      "category": "mobile",
+      "description": "this smartphone with 64mp\nprocessor:helio G95",
+      "image": "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cGhvbmV8ZW58MHx8MHx8fDA%3D",
+      "quantity": 1,
+      "userid": "44a4",
+      "productid": "358a"
+    }
+  ],
+  "orders": [
+    {
+      "id": "0671",
+      "email": "thirumalaimurugavel@gmail.com",
+      "address": "new 18th ward ,Muthu muniyapan kovil street ,Tharamangalam.",
+      "contact": 1435465768,
+      "totalprice": 101239,
+      "userid": "a2d6"
+    }
+  ]
+}

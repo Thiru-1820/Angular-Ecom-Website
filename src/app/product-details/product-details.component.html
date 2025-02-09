@@ -1,0 +1,20 @@
+<div *ngIf="productdetails" class="row product-details">
+    <div class="col-sm-6">
+        <img src="{{productdetails.image}}">
+    </div>
+    <div class="col-sm-6">
+        <h1>{{productdetails.name}}</h1>
+        <h4>price:${{productdetails.price}}</h4>
+        <h4>category:{{productdetails.category}}</h4>
+        <p>Description:{{productdetails.description}}</p>
+        <button>Buy Now</button>
+        <button *ngIf="!removecart" (click)="addtocart()">Add to Cart</button>
+        <button *ngIf="removecart" (click)="removetocart(productdetails.id)">Remove from Cart</button>
+        <div class="quantity-group">
+           <button (click)="handle('min')">-</button>
+           <input #qt type="text" value={{quantity}}> 
+           <button (click)="handle('plus')">+</button>
+        </div>
+    </div>
+
+</div>

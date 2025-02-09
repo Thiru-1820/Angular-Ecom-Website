@@ -1,0 +1,25 @@
+<div class="order-page">
+    <h1>My orders <fa-icon [icon]="ord" class="cart"></fa-icon></h1>
+    <div class="row">
+        <div class="details">
+            <ul *ngFor="let order of orderdata">
+               <li>
+                <img src="https://i.postimg.cc/fyZ1tLFZ/image.png" alt="">
+               </li>
+                <li>
+                    <span>oderid:{{order.id}}</span>
+                </li>
+                <li>
+                    <span>Price:${{order.totalprice}}</span>
+                </li>
+                
+                <li>
+                    <span>status:In progress</span>
+                </li>
+                <li>
+                    <button (click)="cancelorder(order.id)" >Cancel order</button>
+                </li>
+            </ul>
+            
+
+        </div>

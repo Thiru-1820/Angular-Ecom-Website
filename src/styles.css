@@ -1,1 +1,42 @@
 /* You can add global styles to this file, and also import other style files */
+body{
+    font-family: sans-serif;
+    background-color: rgb(32, 13, 51);
+}
+.container{
+    
+    max-width: 100%;
+}
+.common-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-input {
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: blueviolet;
+    box-shadow: 0 0 5px rgba(138, 43, 226, 0.5);
+}
+
+.form-button {
+    padding: 10px;
+    font-size: 18px;
+    color: #fff;
+    background-color: blueviolet;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.form-button:hover {
+    background-color: darkviolet;
+}
