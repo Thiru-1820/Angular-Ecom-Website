@@ -16,5 +16,5 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 pabilities.
 
 ## Live web here
-https://vercel.com/thiru-1820s-projects/angular-ecom-website
 
+https://angular-ecom-website.vercel.app/
