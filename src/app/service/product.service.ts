@@ -10,29 +10,29 @@ export class ProductService {
   cartdata = new EventEmitter<product[] | []>()
   constructor(private http: HttpClient) { }
   addProduct(data: product) {
-    return this.http.post('http://localhost:3000/products', data)
+    return this.http.post('https://back-end-for-angular.onrender.com/products', data)
   }
   productlist() {
-    return this.http.get<product[]>('http://localhost:3000/products')
+    return this.http.get<product[]>('https://back-end-for-angular.onrender.com/products')
   }
   deleteproduct(id: string) {
-    return this.http.delete(`http://localhost:3000/products/${id}`)
+    return this.http.delete(`https://back-end-for-angular.onrender.com/products/${id}`)
   }
   getproduct(id: string) {
-    return this.http.get<product>(`http://localhost:3000/products/${id}`)
+    return this.http.get<product>(`https://back-end-for-angular.onrender.com/products/${id}`)
   }
   updateproduct(data: product) {
-    return this.http.put(`http://localhost:3000/products/${data.id}`, data)
+    return this.http.put(`https://back-end-for-angular.onrender.com/products/${data.id}`, data)
   }
   popularproducts() {
-    return this.http.get<product[]>('http://localhost:3000/products?_limit=3')
+    return this.http.get<product[]>('https://back-end-for-angular.onrender.com/products?_limit=3')
   }
   trendyproduct() {
-    return this.http.get<product[]>('http://localhost:3000/products')
+    return this.http.get<product[]>('https://back-end-for-angular.onrender.com/products')
   }
   searchproduct(query: string) {
 
-    return this.http.get<product[]>(`http://localhost:3000/products?category=${query}`)
+    return this.http.get<product[]>(`https://back-end-for-angular.onrender.com/products?category=${query}`)
   }
   localAddcart(data: product) {
     let cartdata = []
@@ -58,17 +58,17 @@ export class ProductService {
     }
   }
   addtocart(data: cart) {
-    return this.http.post('http://localhost:3000/cart', data)
+    return this.http.post('https://back-end-for-angular.onrender.com/cart', data)
   }
   getcartlist(userid: string) {
-    return this.http.get<product[]>(`http://localhost:3000/cart?userid=${userid}`, { observe: 'response' }).subscribe((result) => {
+    return this.http.get<product[]>(`https://back-end-for-angular.onrender.com/cart?userid=${userid}`, { observe: 'response' }).subscribe((result) => {
       if (result && result.body) {
         this.cartdata.emit(result.body)
       }
     })
   }
   removetocart(id: string) {
-    return this.http.delete(`http://localhost:3000/cart/` + id)
+    return this.http.delete(`https://back-end-for-angular.onrender.com/cart/` + id)
   }
   currentcart() {
     let userstore = localStorage.getItem('user');
@@ -78,10 +78,10 @@ export class ProductService {
       userid = userData.id;
     }
 
-    return this.http.get<cart[]>('http://localhost:3000/cart?userid=' + userid)
+    return this.http.get<cart[]>('https://back-end-for-angular.onrender.com/cart?userid=' + userid)
   }
   ordernow(data:order){
-    return this.http.post('http://localhost:3000/orders',data)
+    return this.http.post('https://back-end-for-angular.onrender.com/orders',data)
   }
   orderlist(){
     let userstore = localStorage.getItem('user');
@@ -91,16 +91,16 @@ export class ProductService {
       userid = userData.id;
     }
 
-    return this.http.get<order[]>('http://localhost:3000/orders?userid=' + userid)
+    return this.http.get<order[]>('https://back-end-for-angular.onrender.com/orders?userid=' + userid)
 
   }
   deletecartitems(cartid:string){
-    return this.http.delete(`http://localhost:3000/cart/` + cartid).subscribe((result)=>{
+    return this.http.delete(`https://back-end-for-angular.onrender.com/cart/` + cartid).subscribe((result)=>{
       this.cartdata.emit([])
 
     })
   }
   cancelorder(id:string){
-    return this.http.delete(`http://localhost:3000/orders/` + id)
+    return this.http.delete(`https://back-end-for-angular.onrender.com/orders/` + id)
   }
 }

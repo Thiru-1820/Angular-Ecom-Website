@@ -10,7 +10,7 @@ export class UserService {
   isloginerror = new EventEmitter<boolean>();
   constructor(private http: HttpClient, private router: Router) { }
   userSignup(user: signUp) {
-    this.http.post('http://localhost:3000/users', user, { observe: 'response' }).subscribe((result: any) => {
+    this.http.post('https://back-end-for-angular.onrender.com/users', user, { observe: 'response' }).subscribe((result: any) => {
       if (result) {
         localStorage.setItem('user', JSON.stringify(result.body))
         this.router.navigate(['/'])
@@ -23,7 +23,7 @@ export class UserService {
     }
   }
   userlogin(data: login) {
-    return this.http.get(`http://localhost:3000/users?email=${data.email}&password=${data.password}`, {
+    return this.http.get(`https://back-end-for-angular.onrender.com/users?email=${data.email}&password=${data.password}`, {
       observe: 'response'
     }).subscribe((result: any) => {
 

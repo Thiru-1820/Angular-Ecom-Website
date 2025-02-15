@@ -13,7 +13,7 @@ export class SellerService {
 
   constructor(private http: HttpClient,private router:Router) { }
   userSignUp(data: signUp) {
-    return this.http.post('http://localhost:3000/seller', data, { observe: 'response' }).subscribe((result:any) => {
+    return this.http.post('https://back-end-for-angular.onrender.com/seller', data, { observe: 'response' }).subscribe((result:any) => {
       
       if(result){
         this.isSellerloggedIn.next(true)
@@ -29,7 +29,7 @@ export class SellerService {
     }
   }
   userlogin(data:login){
-    this.http.get(`http://localhost:3000/seller?email=${data.email}&password=${data.password}`,{
+    this.http.get(`https://back-end-for-angular.onrender.com/seller?email=${data.email}&password=${data.password}`,{
       observe:'response'
     }).subscribe((result:any)=>{
       
