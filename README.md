@@ -15,4 +15,6 @@ Run `json-server db.json --watch` to run the backend json server
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 pabilities.
 
+## Live web here
+https://vercel.com/thiru-1820s-projects/angular-ecom-website
 
